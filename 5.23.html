@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body,html{
+				width: 100%;
+				height: 100%;
+				background: ghostwhite;
+			}
+			body{
+				position: relative;
+			}
+			a{
+				text-decoration: none;
+				color: #000000;
+			}
+			.top > img{
+				width: 50px;
+				height: 50px;
+				margin-left: 30%;
+				margin-top: 15px;
+			}
+			.header{
+				width: 100%;
+				height: 580px;
+				position: absolute;
+			    left: 50%;
+			    top: 50%;
+			    transform: translate(-50%,-50%);
+			}
+			.top{
+				width: 100%;
+				height: 80px;
+				background: #FFFFFF;
+				position: relative;
+			}
+			.bottom{
+				width: 100%;
+				height: 500px;
+				background: #696969;
+				position: relative;
+			}
+			.title{
+				position: absolute;
+				left: 35%;
+				top: 8px;
+			}
+			.title > p{
+				color: #CCCCCC;
+				font-size: 12px;
+			}
+			.box{
+				width: 400px;
+				height: 500px;
+				background: #CCCCCC;
+				position: absolute;
+				right: 30%;
+			}
+			.box > h3{
+				width: 338px;
+				height: 50px;
+				background: orange;
+				font-size: 24px;
+				text-align: center;
+				color: #FFFFFF;
+				margin: 0 auto;
+				margin-top: 20px;
+				line-height: 50px;
+			}
+			h2{
+				cursor:pointer;
+				color: #999;
+			}
+			input{
+				color: #CCCCCC;
+				margin-left: 30px;
+				margin-top: 20px;
+				width: 336px;
+				height: 48px;
+			}
+			h5{
+				color: #FFFFFF;
+			}
+			fieldset{
+				width: 338px;
+				margin: 0 auto;
+				border-top-color: #FFFFFF;
+				border-right-color: initial;
+				border-right-style: initial;
+				border-right-width: 0px;
+				border-left-color: initial;
+				border-left-style: initial;
+				border-left-width: 0px;
+				border-bottom-color: initial;
+				border-bottom-style: initial;
+				border-bottom-width: 0px;
+				position: absolute;
+				left: 30px;
+				top: 400px;
+			}
+			legend{
+				color: #FFFFFF;
+				text-align: center;
+			}
+			i{
+				display: block;
+				width: 19px;
+				height: 19px;
+			}
+			.one{
+				background: url(img/icons_type.png) -19px;
+				position: absolute;
+				left: 100px;
+				top: 440px;
+			}
+			.two{
+				background: url(img/icons_type.png) -38px;
+				position: absolute;
+				left: 160px;
+				top: 440px;
+			}
+			.three{
+				width: 22px;
+				background: url(img/icons_type.png) -57px;
+				position: absolute;
+				right: 160px;
+				top: 440px;
+			}
+			.four{
+				width: 23px;
+				background: url(img/icons_type.png) -84px;
+				position: absolute;
+				right: 100px;
+				top: 440px;
+			}
+			#yz{
+				color: #CCCCCC;
+				margin-left: 30px;
+				margin-top: 20px;
+				width: 200px;
+				height: 48px;
+			}
+			#code{
+				width: 100px;
+				height: 48px;
+				background: silver;
+				position: absolute;
+				left: 268px;
+				top: 226px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="top">
+				<img src="img/favicon.ico"/>
+				<div class="title">
+					<h1><a href="#">小米商城</a></h1>
+					<p>让每个人都能享受科技的乐趣</p>
+				</div>
+			</div>
+			<div class="bottom">
+				<div class="box">
+					<h2 style="float: left;margin-top: 30px;margin-left: 50px;border-right: 1px solid #000000;padding-right: 50px;color: orange;">账号登录</h2>
+					<h2 style="float: right;margin-top: 30px;margin-right: 50px;">扫码登录</h2>
+					<input id="zh" type="text" value="请输入账号" />
+					<input id="mm" type="password" value="请输入密码" />
+					<input id="yz" value="请输入验证码" />
+					<div id="code"></div>
+					<h3>立即登录</h3>
+					<h5 style="float: left;margin-top: 20px;margin-left: 70px;border-right: 1px solid #FFFFFF;padding-right: 50px;">注册小米账号</h5>
+					<h5 style="float: right;margin-top: 20px;margin-right: 70px;">忘记密码？</h5>
+					<fieldset>
+						<legend>其他方式登录</legend>
+					</fieldset>
+					<div class="tp">
+						<a href="#" title="QQ登录">
+							<i class="one"></i>
+						</a>
+						<a href="#" title="微博登录">
+							<i class="two"></i>
+						</a>
+						<a href="#" title="支付宝登录">
+							<i class="three"></i>
+						</a>
+						<a href="#" title="微信登录">
+							<i class="four"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
